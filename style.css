@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #1c1c1c;
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 90px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+nav a {
+  margin: 0 18px;
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+
+nav a:hover {
+  color: #aaa;
+}
+
+/* GitHub Icon */
+.github img {
+  width: 28px;
+  filter: invert(1);
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 90px;
+}
+
+/* Left Text */
+.hero-text p {
+  font-size: 17px;
+  color: #ccc;
+}
+
+.hero-text h1 {
+  font-size: 75px;
+  font-weight: 800;
+  color: #b6c7da;
+  margin: 20px 0;
+  line-height: 1.1;
+}
+
+/* Contact Link */
+.contact-link {
+  font-size: 18px;
+  color: white;
+  text-decoration: underline;
+}
+
+/* Resume Button */
+.resume-btn {
+  padding: 12px 28px;
+  background: white;
+  color: black;
+  font-weight: bold;
+  border-radius: 12px;
+  text-decoration: none;
+}
+
+/* Right Image Box */
+.hero-image {
+  background: #8da3b7;
+  padding: 25px;
+  border-radius: 25px;
+}
+
+.hero-image img {
+  width: 290px;
+  height: 360px;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+/* About Section */
+.about {
+  padding: 60px 90px;
+}
+
+.about-title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.about-title h2 {
+  font-size: 55px;
+  font-weight: 700;
+  color: #b6c7da;
+  text-transform: lowercase;
+}
+
+.line {
+  flex: 1;
+  height: 2px;
+  background: #444;
+}
+
+.about p {
+  margin-top: 20px;
+  max-width: 700px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* Skills */
+.skills {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 90px;
+}
+
+.skill h3 {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.skill p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #aaa;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media(max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image {
+    margin-top: 30px;
+  }
+
+  .skills {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+}
